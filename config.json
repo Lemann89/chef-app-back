@@ -1,0 +1,4 @@
+{
+  "port": 2002,
+  "dbConnectingString": "postgresql://postgres:thUua8WBY@localhost:5432/chef"
+}
