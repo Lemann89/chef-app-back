@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ limit: '20mb', extended: true  }));
 app.use(bodyParser.json({ limit: '20mb', extended: true }));
 
 app.use('/products', require('./controllers/products.controller'));
+app.use('/warehouse', require('./controllers/warehouse.controller'));
 app.use('/ingredients', require('./controllers/ingredients.controller'));
 app.use('/dishes', require('./controllers/dishes.controller'))
 app.use('/recipes', require('./controllers/recipes.controller'));

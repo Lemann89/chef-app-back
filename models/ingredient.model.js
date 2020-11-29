@@ -1,5 +1,6 @@
 const config = require('../config.json');
 const Product = require("./product.model");
+const IngredientType = require("./ingredientType.model");
 const {Sequelize, DataTypes} = require('sequelize');
 
 const sequelize = new Sequelize(config.dbConnectingString);
@@ -25,11 +26,14 @@ const Ingredient = sequelize.define('ingredient', {
     },
     {freezeTableName: true, timestamps: false});
 
-
-sequelize.sync();
-
 Ingredient.belongsTo(Product, {
     foreignKey: 'product_id'
 });
+
+Ingredient.belongsTo(IngredientType, {
+    foreignKey: 'product_type_id'
+});
+
+sequelize.sync();
 
 module.exports = Ingredient;

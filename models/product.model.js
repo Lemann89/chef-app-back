@@ -26,12 +26,14 @@ const Product = sequelize.define('product', {
         },
         kilocalories: {
             type: DataTypes.DOUBLE
+        },
+        imageURL: {
+            type: DataTypes.STRING(255)
         }
     },
     {freezeTableName: true, timestamps: false});
 
 
 sequelize.sync();
-
 
 module.exports = Product;
