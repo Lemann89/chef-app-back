@@ -11,18 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="743270e0-f8a5-4df5-a0e8-ab53d31c2111" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/warehouse.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ingredientType.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/warehouse.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/menu.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/menu.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/orderHistory.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chef-app" beforeDir="false" afterPath="$PROJECT_DIR$/../chef-app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/dishes.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/dishes.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/products.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/products.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/dish.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/dish.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ingredient.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ingredient.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/product.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/warehouse.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/warehouse.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/recipe.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/recipe.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/warehouse.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/warehouse.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +81,7 @@
       <workItem from="1605911267766" duration="8214000" />
       <workItem from="1605975373529" duration="12782000" />
       <workItem from="1606570146767" duration="12709000" />
-      <workItem from="1606652016957" duration="1343000" />
+      <workItem from="1606652016957" duration="23331000" />
     </task>
     <servers />
   </component>
@@ -116,26 +113,26 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605989340505" />
-    <state width="1899" height="135" key="GridCell.Tab.0.bottom" timestamp="1606612771026">
+    <state width="1899" height="214" key="GridCell.Tab.0.bottom" timestamp="1606658246209">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605986611548" />
-    <state width="1899" height="135" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606612771026" />
-    <state width="1899" height="135" key="GridCell.Tab.0.center" timestamp="1606612771026">
+    <state width="1899" height="214" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606658246209" />
+    <state width="1899" height="214" key="GridCell.Tab.0.center" timestamp="1606658246208">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="302" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605986611547" />
-    <state width="1899" height="135" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606612771026" />
-    <state width="1899" height="135" key="GridCell.Tab.0.left" timestamp="1606612771026">
+    <state width="1899" height="214" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606658246208" />
+    <state width="1899" height="214" key="GridCell.Tab.0.left" timestamp="1606658246208">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="302" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605986611547" />
-    <state width="1899" height="135" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606612771026" />
-    <state width="1899" height="135" key="GridCell.Tab.0.right" timestamp="1606612771026">
+    <state width="1899" height="214" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606658246208" />
+    <state width="1899" height="214" key="GridCell.Tab.0.right" timestamp="1606658246209">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="302" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605986611548" />
-    <state width="1899" height="135" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606612771026" />
+    <state width="1899" height="214" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606658246209" />
     <state x="2381" y="165" key="SettingsEditor" timestamp="1605983108404">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

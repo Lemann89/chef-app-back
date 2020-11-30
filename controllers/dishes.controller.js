@@ -55,11 +55,11 @@ router.get('/:id', async (req, res) => {
 router.get('/:id/params', async (req, res) => {
     const dishCalories = await sequelize.query(`
         SELECT dish_name,
-          ROUND(SUM(((fats * gram_product * 1.0 / 100)))::numeric, 2)                               AS fats,
-          ROUND(SUM(((proteins * gram_product * 1.0 / 100)))::numeric, 2)                           AS proteins,
-          ROUND(SUM(((carbohydrates * gram_product * 1.0 / 100)))::numeric, 2)                      AS carbohydrates,
-          ROUND(SUM(((kilocalories * gram_product * 1.0 / 100)))::numeric, 2)                       AS kilocalories,
-          ROUND(SUM(((product_price * gram_product * 1.0 / 1000) * recipe_complexity))::numeric, 0) AS price
+          ROUND(SUM(((fats * gram_product / 100.0)))::numeric, 2)                               AS fats,
+          ROUND(SUM(((proteins * gram_product / 100.0)))::numeric, 2)                           AS proteins,
+          ROUND(SUM(((carbohydrates * gram_product / 100.0)))::numeric, 2)                      AS carbohydrates,
+          ROUND(SUM(((kilocalories * gram_product / 100.0)))::numeric, 2)                       AS kilocalories,
+          ROUND(SUM(((product_price * gram_product / 1000.0) * recipe_complexity))::numeric, 0) AS price
         FROM (
                  SELECT dish.name                           AS dish_name,
                         pgc.gram_koefficient,

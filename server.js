@@ -13,6 +13,7 @@ app.use('/warehouse', require('./controllers/warehouse.controller'));
 app.use('/ingredients', require('./controllers/ingredients.controller'));
 app.use('/dishes', require('./controllers/dishes.controller'))
 app.use('/recipes', require('./controllers/recipes.controller'));
+app.use('/menu', require('./controllers/menu.controller'));
 
 app.listen(config.port, (error) => {
     if (error) {

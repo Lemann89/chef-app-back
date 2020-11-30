@@ -1,28 +1,31 @@
 const config = require('../config.json');
-const Product = require("./product.model");
+const Dish = require("./dish.model");
 const {Sequelize, DataTypes} = require('sequelize');
 
 const sequelize = new Sequelize(config.dbConnectingString);
 
-const Warehouse = sequelize.define('warehouse', {
+const Menu = sequelize.define('menu', {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        product_id: {
+        dish_id: {
             type: DataTypes.INTEGER
         },
-        quantity: {
-            type: DataTypes.DOUBLE
+        portion_quantity: {
+            type: DataTypes.INTEGER
+        },
+        date: {
+            type: DataTypes.DATE
         }
     },
     {freezeTableName: true, timestamps: false});
 
 sequelize.sync();
 
-Warehouse.belongsTo(Product, {
-    foreignKey: 'product_id'
+Menu.belongsTo(Dish, {
+    foreignKey: 'dish_id'
 });
 
-module.exports = Warehouse;
+module.exports = Menu;

@@ -15,6 +15,9 @@ const Recipe = sequelize.define('recipe', {
         },
         complexity: {
             type: DataTypes.DOUBLE
+        },
+        portions: {
+            type: DataTypes.INTEGER
         }
     },
     {freezeTableName: true, timestamps: false});
