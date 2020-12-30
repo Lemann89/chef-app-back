@@ -28,7 +28,7 @@ router.get('/:id', async (req, res) => {
     res.json(warehouseProduct);
 })
 
-router.put('/updatequantity', async (req, res) => {
+router.post('/order', async (req, res) => {
     req.body.forEach(p => {
         sequelize.query(`
             BEGIN TRANSACTION;
@@ -41,9 +41,11 @@ router.put('/updatequantity', async (req, res) => {
             VALUES (${p.product_id}, ${p.quantity});
             
             COMMIT;
-        `)
+        `, {type : QueryTypes.UPDATE} )
     })
-    res.status(200).send('Success');
+    res.status(201);
 });
+
+//router.put()
 
 module.exports = router;
