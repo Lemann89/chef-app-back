@@ -7,15 +7,22 @@ const Dish = require("../models/dish.model");
 const sequelize = new Sequelize(config.dbConnectingString);
 
 router.get('/', async (req, res) => {
-    const menu = await Menu.findAll({
-        include: Dish
-    })
-    res.json(menu);
+    const menuDishes = await sequelize.query(`
+            SELECT menu.id AS id,
+               "imageURL",
+               name,
+               dish_id,
+               portion_quantity,
+               date,
+               cooked
+            FROM menu INNER JOIN dish d on d.id = menu.dish_id
+            ORDER BY date
+            `, {type: QueryTypes.SELECT});
+    res.json(menuDishes);
 })
 
 router.post('/create', async (req, res) => {
     let dishes = []
-    console.log(req.body)
 
     await Promise.all(req.body.map(dish => {
         return sequelize.query(`

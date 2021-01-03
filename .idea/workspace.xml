@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="743270e0-f8a5-4df5-a0e8-ab53d31c2111" name="Default Changelist" comment="add warehouse/updatequantity , banquet logic">
+    <list default="true" id="743270e0-f8a5-4df5-a0e8-ab53d31c2111" name="Default Changelist" comment="=^-^=">
       <change beforePath="$PROJECT_DIR$/../chef-app" beforeDir="false" afterPath="$PROJECT_DIR$/../chef-app" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/menu.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/menu.controller.js" afterDir="false" />
@@ -104,7 +104,10 @@
       <workItem from="1608991593003" duration="3612000" />
       <workItem from="1609017047333" duration="5282000" />
       <workItem from="1609189916130" duration="34000" />
-      <workItem from="1609345170171" duration="438000" />
+      <workItem from="1609345170171" duration="6199000" />
+      <workItem from="1609506256226" duration="22000" />
+      <workItem from="1609506354287" duration="4512000" />
+      <workItem from="1609678630587" duration="5334000" />
     </task>
     <servers />
   </component>
@@ -125,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add warehouse/updatequantity , banquet logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="add warehouse/updatequantity , banquet logic" />
+    <MESSAGE value="=^-^=" />
+    <option name="LAST_COMMIT_MESSAGE" value="=^-^=" />
   </component>
 </project>

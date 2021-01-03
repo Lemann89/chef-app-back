@@ -43,9 +43,7 @@ router.post('/order', async (req, res) => {
             COMMIT;
         `, {type : QueryTypes.UPDATE} )
     })
-    res.status(201);
+    res.status(201).send('Success');
 });
-
-//router.put()
 
 module.exports = router;
