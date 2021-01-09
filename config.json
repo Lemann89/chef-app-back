@@ -1,4 +1,4 @@
 {
   "port": 2002,
-  "dbConnectingString": "postgresql://postgres:thUua8WBY@localhost:5432/chef"
+  "dbConnectingString": "postgres://txaloefjizzlyn:2c3566b696fdd4334a291d801d205a9c8e0eb59b9b5bb7fa6ec7da6ae1a6f45b@ec2-52-211-161-21.eu-west-1.compute.amazonaws.com:5432/d1cbfkjf5giduo?ssl=no-verify"
 }

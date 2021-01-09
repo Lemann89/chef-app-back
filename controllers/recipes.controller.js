@@ -14,6 +14,17 @@ router.get('/', async (req, res) => {
         }
     });
     res.json(recipes);
-})
+});
+
+router.delete('/:id/delete', async (req, res) => {
+    await Recipe.destroy({
+        where : {
+            id: req.params.id
+        }
+    }).catch(err => {
+        console.log(err);
+    });
+    res.status(204).send('Success delete');
+});
 
 module.exports = router;

@@ -28,7 +28,8 @@ const Dish = sequelize.define('dish', {
 
 
 Dish.belongsTo(Recipe, {
-    foreignKey: 'recipe_id'
+    foreignKey: 'recipe_id',
+    onDelete: 'CASCADE'
 })
 
 sequelize.sync();

@@ -6,8 +6,6 @@ const config = require('../config.json');
 const {QueryTypes, Sequelize} = require('sequelize');
 const sequelize = new Sequelize(config.dbConnectingString);
 
-let warehouseProduct;
-
 router.get('/', async (req, res) => {
     const products = await Warehouse.findAll({
         include: {
@@ -15,9 +13,11 @@ router.get('/', async (req, res) => {
         }
     });
     res.json(products);
-})
+});
+
+
 router.get('/:id', async (req, res) => {
-    warehouseProduct = await Warehouse.findOne({
+    let warehouseProduct = await Warehouse.findOne({
         include: {
             model: Product,
         },
@@ -26,10 +26,10 @@ router.get('/:id', async (req, res) => {
         }
     });
     res.json(warehouseProduct);
-})
+});
 
 router.post('/order', async (req, res) => {
-    req.body.forEach(p => {
+    await req.body.forEach(p => {
         sequelize.query(`
             BEGIN TRANSACTION;
         
@@ -41,9 +41,11 @@ router.post('/order', async (req, res) => {
             VALUES (${p.product_id}, ${p.quantity});
             
             COMMIT;
-        `, {type : QueryTypes.UPDATE} )
-    })
-    res.status(201).send('Success');
+        `, {type : QueryTypes.UPDATE} ).catch(err => {
+                res.status(520).send(err);
+        });
+        res.status(201).send('Success');
+    });
 });
 
 module.exports = router;

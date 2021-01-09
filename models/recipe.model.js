@@ -26,7 +26,8 @@ const Recipe = sequelize.define('recipe', {
 sequelize.sync();
 
 Recipe.hasMany(Ingredient, {
-    foreignKey: 'recipe_id'
+    foreignKey: 'recipe_id',
+    onDelete: 'CASCADE'
 });
 
 module.exports = Recipe;

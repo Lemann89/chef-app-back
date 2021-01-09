@@ -87,4 +87,19 @@ router.get('/:id/params', async (req, res) => {
     res.json(dishCalories[0]);
 })
 
+router.post('/create', async (req, res) => {
+    await Dish.create(req.body,
+        {
+            include: [{
+                model: Recipe,
+                include: {
+                    model: Ingredient,
+                }
+            }]
+        }).catch(err => {
+        console.log(err)
+    })
+    res.status(200).send('Success');
+})
+
 module.exports = router;

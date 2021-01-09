@@ -59,24 +59,26 @@ router.post('/create', async (req, res) => {
         })
         res.json(dishes);
     });
+
     await dishes.forEach(dish => {
         let isIngredient = true;
-        let dishId = dish[0].dish_id;
-        let portionQuantity = dish[0].portion_quantity;
-        let date = dish[0].date;
+        const [dishMenu] = dish;
+
         dish.forEach(item => {
             if (!item.is_exist) {
-                isIngredient = false
+                isIngredient = false;
             }
-        })
+        });
+
         if (isIngredient) {
             Menu.create({
-                dish_id: dishId,
-                portion_quantity: portionQuantity,
-                date: date
+                dish_id: dishMenu.dish_id,
+                portion_quantity: dishMenu.portion_quantity,
+                date: dishMenu.date
             })
         }
     })
+
     res.status(201);
 })
 

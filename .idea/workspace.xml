@@ -10,11 +10,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="743270e0-f8a5-4df5-a0e8-ab53d31c2111" name="Default Changelist" comment="=^-^=">
+    <list default="true" id="743270e0-f8a5-4df5-a0e8-ab53d31c2111" name="Default Changelist" comment="mvp done!!!">
+      <change afterPath="$PROJECT_DIR$/controllers/orderHistory.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chef-app" beforeDir="false" afterPath="$PROJECT_DIR$/../chef-app" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/dishes.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/dishes.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/menu.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/menu.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/products.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/products.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/recipes.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/recipes.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/warehouse.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/warehouse.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/dish.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/dish.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/recipe.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/recipe.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +33,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -107,7 +124,14 @@
       <workItem from="1609345170171" duration="6199000" />
       <workItem from="1609506256226" duration="22000" />
       <workItem from="1609506354287" duration="4512000" />
-      <workItem from="1609678630587" duration="5334000" />
+      <workItem from="1609678630587" duration="6515000" />
+      <workItem from="1609708301962" duration="1259000" />
+      <workItem from="1609854777616" duration="2965000" />
+      <workItem from="1609881000861" duration="65000" />
+      <workItem from="1609944989474" duration="12518000" />
+      <workItem from="1610045400854" duration="10488000" />
+      <workItem from="1610126207016" duration="2456000" />
+      <workItem from="1610204380531" duration="6744000" />
     </task>
     <servers />
   </component>
@@ -129,6 +153,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add warehouse/updatequantity , banquet logic" />
     <MESSAGE value="=^-^=" />
-    <option name="LAST_COMMIT_MESSAGE" value="=^-^=" />
+    <MESSAGE value="mvp done!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvp done!!!" />
   </component>
 </project>
