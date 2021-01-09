@@ -12,7 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="743270e0-f8a5-4df5-a0e8-ab53d31c2111" name="Default Changelist" comment="mvp done!!!">
       <change beforePath="$PROJECT_DIR$/../chef-app" beforeDir="false" afterPath="$PROJECT_DIR$/../chef-app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,7 @@
       <workItem from="1609944989474" duration="12518000" />
       <workItem from="1610045400854" duration="10488000" />
       <workItem from="1610126207016" duration="2456000" />
-      <workItem from="1610204380531" duration="7283000" />
+      <workItem from="1610204380531" duration="7536000" />
     </task>
     <servers />
   </component>
