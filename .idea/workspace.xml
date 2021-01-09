@@ -11,18 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="743270e0-f8a5-4df5-a0e8-ab53d31c2111" name="Default Changelist" comment="mvp done!!!">
-      <change afterPath="$PROJECT_DIR$/controllers/orderHistory.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chef-app" beforeDir="false" afterPath="$PROJECT_DIR$/../chef-app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/dishes.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/dishes.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/menu.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/menu.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/products.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/products.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/recipes.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/recipes.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/warehouse.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/warehouse.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/dish.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/dish.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/recipe.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/recipe.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +120,7 @@
       <workItem from="1609944989474" duration="12518000" />
       <workItem from="1610045400854" duration="10488000" />
       <workItem from="1610126207016" duration="2456000" />
-      <workItem from="1610204380531" duration="6744000" />
+      <workItem from="1610204380531" duration="7283000" />
     </task>
     <servers />
   </component>
